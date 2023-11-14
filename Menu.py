@@ -5,11 +5,11 @@ alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M',
 
 simbolos = ['!','@','#','$','%','&']
 
-Numeros = ['1','2','3','4','5','6','7','8','9','0']
+numeros = ['1','2','3','4','5','6','7','8','9','0']
 
-geral = [alfabeto, simbolos, Numeros]
+geral = [alfabeto, simbolos, numeros]
 
-Senha = ''
+senha = ''
 
 try:
     tamanho = int(input('Tamanho da senha: '))
@@ -18,6 +18,6 @@ except (ValueError, TypeError):
 else:
     for x in range(tamanho):
         aleatorio = randint(0, 2)
-        Senha += choice(geral[aleatorio])
+        senha += choice(geral[aleatorio])
 
-print(f'Senha gerada: {Senha}')
+print(f'Senha gerada: {senha}')
