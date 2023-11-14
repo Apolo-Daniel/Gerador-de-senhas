@@ -14,10 +14,9 @@ senha = ''
 try:
     tamanho = int(input('Tamanho da senha: '))
 except (ValueError, TypeError):
-    print(f'\033[1;31mERRO! Reinicie o programa e digite um número inteiro válido!')
+    print(f'\033[1;31mERRO! Reinicie o programa e digite um número inteiro válido!\033[m')
 else:
     for x in range(tamanho):
         aleatorio = randint(0, 2)
         senha += choice(geral[aleatorio])
-
-print(f'Senha gerada: {senha}')
+    print(f'Senha gerada: {senha}')
